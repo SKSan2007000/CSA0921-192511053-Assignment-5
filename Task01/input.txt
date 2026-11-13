@@ -1,0 +1,1 @@
+Bus pass fields: pass ID, register number, name, route number, boarding stop, validity date, amount paid.

@@ -1,0 +1,10 @@
+*.class
+*.log
+*.tmp
+*.dat
+attendance.txt
+full_passes.txt
+passes.csv
+*.jar
+.idea/
+.vscode/

@@ -1,0 +1,1 @@
+Transfer amount: Rs. 500. Login query uses ID and password values.

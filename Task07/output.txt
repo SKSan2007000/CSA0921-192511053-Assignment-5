@@ -1,0 +1,12 @@
+$ javac -cp ../Task06 AdversarialInputDemo.java LoginAttackTest.java DamagedPassTest.java
+Compilation successful.
+$ java AdversarialInputDemo
+Unsafe query accepts crafted condition: true
+Prepared query uses placeholders: SELECT 1 FROM users WHERE id=? AND pwd=?
+Damaged rows are skipped by PassStore validation.
+$ java -cp .:../Task06 DamagedPassTest
+Valid record: [P4, 192311004, Kumar, 8, 3900.00]
+Wrong field count: null
+Invalid amount: null
+Empty line: skipped while searching
+Live MySQL login comparison: pending local DB configuration.

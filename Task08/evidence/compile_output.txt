@@ -1,0 +1,2 @@
+$ javac JdbcComparison.java PassLoader.java
+Compilation successful.

@@ -1,0 +1,6 @@
+$ javac BufferingDemo.java
+Compilation successful.
+$ java BufferingDemo
+1 MB | lines=10485 | byte-read=468.179 ms | buffered=5.801 ms | same=true
+10 MB | lines=104857 | byte-read=4873.882 ms | buffered=22.120 ms | same=true
+50 MB | lines=524288 | byte-read=26513.411 ms | buffered=178.024 ms | same=true

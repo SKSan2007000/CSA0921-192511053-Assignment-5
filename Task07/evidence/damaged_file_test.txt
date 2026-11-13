@@ -1,0 +1,5 @@
+$ java -cp .:../Task06 DamagedPassTest
+Valid record: [P4, 192311004, Kumar, 8, 3900.00]
+Wrong field count: null
+Invalid amount: null
+Empty line: skipped while searching

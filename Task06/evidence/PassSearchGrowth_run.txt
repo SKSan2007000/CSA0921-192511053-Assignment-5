@@ -1,0 +1,5 @@
+$ java PassSearchGrowth
+1000 records | found=true | 8.558 ms
+10000 records | found=true | 13.756 ms
+50000 records | found=true | 52.138 ms
+100000 records | found=true | 32.385 ms

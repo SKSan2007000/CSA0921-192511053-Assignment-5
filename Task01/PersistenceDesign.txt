@@ -1,0 +1,33 @@
+A1.1 TEXT RECORD LAYOUT
+passId|registerNo|name|routeNo|boardingStop|validityDate|amount
+Escape the delimiter in text fields (or use a quoted CSV parser). Reject malformed records.
+
+A1.1 BINARY RECORD LAYOUT
+DataOutputStream writes fields in a fixed documented order: writeUTF(passId), writeUTF(registerNo),
+writeUTF(name), writeInt(routeNo), writeUTF(boardingStop), writeUTF(validityDate), writeDouble(amount).
+
+A1.2 PSEUDOCODE
+ADD(pass):
+  OPEN BufferedWriter in append mode
+  VALIDATE required fields and numeric values
+  WRITE escaped fields in the documented order; WRITE newline
+  CLOSE writer
+
+FIND(passId):
+  OPEN BufferedReader
+  WHILE line exists: PARSE and validate field count; IF passId matches RETURN record
+  RETURN NOT_FOUND; CLOSE reader
+
+LIST_BY_ROUTE(route):
+  OPEN BufferedReader
+  WHILE line exists: PARSE valid row; IF route matches DISPLAY record
+  CLOSE reader
+
+A1.3 DAMAGED DATA
+Skip and log a line with the wrong field count or invalid numeric values. If the file is missing,
+report it and create it only for an add operation. For power failure, write to a temporary file and
+atomically rename after a complete rewrite; append operations should use a checksum or journal.
+
+ALTERNATIVE
+A fixed-length RandomAccessFile record can be located at index * recordSize in O(1), but ID lookup
+still needs an index unless records are stored in ID order. Padding wastes space for short names.

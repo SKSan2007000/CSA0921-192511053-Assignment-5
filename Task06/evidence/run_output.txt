@@ -1,0 +1,5 @@
+$ java PassStore
+[P1003, 192311003, Divya, 7, 3800.0]
+null
+Route 12:
+P1001,192311001,Arun,12,4500.0

@@ -1,0 +1,2 @@
+$ java MigrationTool
+Set DB_URL, DB_USER and DB_PASSWORD to run the database migration.

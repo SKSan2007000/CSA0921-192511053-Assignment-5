@@ -1,0 +1,4 @@
+$ javac JdbcComparison.java PassLoader.java
+Compilation successful.
+$ java JdbcComparison
+Set DB_URL, DB_USER and DB_PASSWORD to run MySQL comparison.

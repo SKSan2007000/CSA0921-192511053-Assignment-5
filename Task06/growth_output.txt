@@ -1,0 +1,4 @@
+1000 records | found=true | median=1.413 ms
+10000 records | found=true | median=9.338 ms
+50000 records | found=true | median=13.412 ms
+100000 records | found=true | median=21.716 ms

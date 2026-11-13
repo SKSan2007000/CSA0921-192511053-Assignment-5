@@ -1,0 +1,1 @@
+Evidence is based on the actual standalone program output or, for design/database tasks, the documented design or explicitly stated pending database setup.

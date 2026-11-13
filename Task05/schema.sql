@@ -1,0 +1,10 @@
+CREATE TABLE wallet (
+    id INT PRIMARY KEY,
+    balance DECIMAL(12,2) NOT NULL
+);
+CREATE TABLE users (
+    id VARCHAR(40) PRIMARY KEY,
+    pwd VARCHAR(80) NOT NULL
+);
+INSERT INTO wallet VALUES (1, 5000.00), (2, 1000.00);
+INSERT INTO users VALUES ('student1', 'pass123');

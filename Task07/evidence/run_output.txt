@@ -1,0 +1,4 @@
+$ java AdversarialInputDemo
+Unsafe query accepts crafted condition: true
+Prepared query uses placeholders: SELECT 1 FROM users WHERE id=? AND pwd=?
+Damaged rows are skipped by PassStore validation.

@@ -1,0 +1,1 @@
+Hostel sample: Room 12; Resident Arun; registerNo 192311001; password is transient.

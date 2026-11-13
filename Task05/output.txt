@@ -1,0 +1,4 @@
+$ javac TransactionAndLogin.java
+Compilation successful.
+$ java TransactionAndLogin
+Transaction and PreparedStatement methods are ready for a configured JDBC connection.

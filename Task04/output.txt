@@ -1,0 +1,5 @@
+$ javac SerializationDemo.java
+Compilation successful.
+$ java SerializationDemo
+Arun
+Password after load=null

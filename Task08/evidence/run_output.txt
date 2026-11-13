@@ -1,0 +1,2 @@
+$ java JdbcComparison
+Set DB_URL, DB_USER and DB_PASSWORD to run MySQL comparison.
