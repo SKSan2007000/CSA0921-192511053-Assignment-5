@@ -5,7 +5,6 @@
 **Course:** Programming in Java (CSA09)  
 **Java version:** OpenJDK 21
 
-GitHub Repository Link: __________________________________________
 
 ## Task folders
 
